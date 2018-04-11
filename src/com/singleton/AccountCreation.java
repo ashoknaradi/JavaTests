@@ -1,6 +1,6 @@
 package com.singleton;
 
-public class AccountCreation {
+public class AccountCreation implements Cloneable {
 	private static AccountCreation instance;
 
 	private AccountCreation() {
@@ -19,6 +19,11 @@ public class AccountCreation {
 
 	public void create(int no) {
 		System.out.println("Account Created Successfully, with Number:" + no);
+	}
+ 
+	protected Object clone() throws CloneNotSupportedException {
+		return this;
+		//return super.clone();
 	}
 
 }
