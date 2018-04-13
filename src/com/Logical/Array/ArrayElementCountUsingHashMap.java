@@ -3,7 +3,7 @@ package com.Logical.Array;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class ArrayElementCount {
+public class ArrayElementCountUsingHashMap {
 	static void arrayElementCount(int inputArray[]) {
 		// Creating a HashMap object with elements of inputArray as keys and their count as values
 		HashMap<Integer, Integer> elementCountMap = new HashMap<Integer, Integer>();
