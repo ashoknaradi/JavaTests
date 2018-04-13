@@ -1,4 +1,4 @@
-package com.Logical;
+package com.Logical.Array;
 
 public class DataStructure {
 	public static void main(String[] args) {
