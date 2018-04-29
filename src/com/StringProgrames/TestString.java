@@ -40,13 +40,8 @@ public class TestString {
 		String s10 = s9 + "";
 		System.out.println(s9);
 		System.out.println(s10);
-		System.out.println("(s4 == s3)========== " + (s9 == s10));
+		System.out.println("(s9 == s10)========== " + (s9 == s10));
 		// Content Comparison
 		System.out.println("s4.equals(s3)====== " + s9.equals(s10));
-
-		
-		
-
-	}
-	
+	}	
 }

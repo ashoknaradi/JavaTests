@@ -18,12 +18,12 @@ public class Array_Repeated_Element_Count {
 		int[] times = new int[10];
 		// Search for repeated elements
 		for (int j = 0; j < crr_array.length; j++) {
-			//times[crr_array[j]] = times[crr_array[j]] + 1;
+			// times[crr_array[j]] = times[crr_array[j]] + 1;
 			times[crr_array[j]]++;
 		}
 		// Printing output
 		for (int i = 0; i < times.length; i++) {
-			System.out.println(i + " occures " + times[i]);
+			System.out.println(i + " occurs " + times[i]);
 		}
 	}
 }

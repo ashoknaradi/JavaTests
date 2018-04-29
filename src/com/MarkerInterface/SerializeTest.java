@@ -6,22 +6,18 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class Test {
+public class SerializeTest {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
-		A a = new A(20, "Java");
-
+		SerializeA a = new SerializeA(111, "Java Serialize Testing");
 		// Serializing 'a'
 		FileOutputStream fos = new FileOutputStream("C://Users/Ramp/Desktop/Test.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(a);
-		
 		// De-serializing 'a'
 		FileInputStream fis = new FileInputStream("C://Users/Ramp/Desktop/Test.txt");
 		ObjectInputStream ois = new ObjectInputStream(fis);
-		A b = (A) ois.readObject();// down-casting object
-
+		SerializeA b = (SerializeA) ois.readObject();// down-casting object
 		System.out.println(b.i + " " + b.s);
-
 		// closing streams
 		oos.close();
 		ois.close();

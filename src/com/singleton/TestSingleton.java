@@ -18,13 +18,9 @@ public class TestSingleton {
 }
 
 class EmployeeSingle implements Cloneable {
-
 	private EmployeeSingle() {
-
 	}
-
 	private static EmployeeSingle emp;
-
 	/**
 	 * If required a object, use the below method. This class is a singleton
 	 */
